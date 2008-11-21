@@ -1,0 +1,46 @@
+(owner)s_(make)_(model):
+  joes_chevy_malibu:
+    color: blue
+
+  eds_toyota_corolla:
+    color: black
+
+  jeds_vw_beetle:
+    color: pink
+
+  teds_ford_mustang:
+    color: blue
+
+  zeds_ford_bronco:
+    color: blue
+
+  zeds_mini_cooper:
+    color: blue
+
+(model):
+  red_fords:
+    make: ford
+    color: red
+
+    mustang:
+      owner: freddy
+
+    taurus:
+      owner: freddy
+      
+  green_dodges:
+    make: dodge
+    color: green
+    
+    charger:
+      owner: teddy
+
+blue_chevys:
+  make: chevy
+  color: blue
+
+  camero:
+    owner: jeddi
+
+
+

@@ -1,0 +1,1 @@
+require 'light_fixtures'
