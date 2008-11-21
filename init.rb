@@ -1,1 +1,1 @@
-require 'light_fixtures'
+require 'lite_fixtures'
