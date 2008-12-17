@@ -1,6 +1,9 @@
 LiteFixtures
 =============
 
+INSTALL: 
+  script/plugin install git://github.com/theIntuitionist/lite-fixtures.git
+
 Lite Fixtures introduces two syntactical improvements to standard rails fixtures.  
 
   1) Patterns in fixture names
