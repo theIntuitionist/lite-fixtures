@@ -1,13 +1,65 @@
-LightFixtures
+LiteFixtures
 =============
 
-Introduction goes here.
+Lite Fixtures introduces two syntactical improvements to standard rails fixtures.  
 
+  1) Patterns in fixture names
+    Using the pattern "(owners)s_(color)_(make)" in conjunction with the fixture 
+    name "Freds_red_Ford" unpacks owner to Fred, color to red and make to Ford.  
+    
+    So:
 
-Example
-=======
+      (owners)s_(color)_(make)
 
-Example goes here.
+        Freds_red_Ford:
+          year: 1977
+          
+        Eds_blue_Chevy:
+          year: 1987
+      
+        
+    Becomes
+    
+        Freds_red_Ford:
+          owner: Fred
+          color: red
+          make:  Ford
+          year:  1977
 
+        Eds_blue_Chevy:
+          owner: Ed
+          color: blue
+          make:  Chevy
+          year: 1987
+          
+    2) Grouping of Data
+      Often fixtures group cleanly- family of users, manufacturers of cars, etc.  Lite fixtures lets you nest data, so scoped values are propigated inward. 
 
-Copyright (c) 2008 [name of plugin creator], released under the MIT license
+    So:
+    
+      red_fords:
+        make: ford
+        color: red
+
+        mustang:
+          owner: freddy
+
+        taurus:
+          owner: freddy
+          
+    Becomes:
+    
+      mustang:
+        make: ford
+        color: red
+        owner: freddy
+
+      taurus:
+        make: ford
+        color: red
+        owner: freddy
+    
+
+All the usual fixture features are still supported
+
+Copyright (c) 2008 Jason Libsch, released under the MIT license
